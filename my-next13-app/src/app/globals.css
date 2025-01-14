@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000; /* Black background */
+  font-family: 'Exo', 'Helvetica', 'sans-serif'; /* Default font */
+  font-weight: 400; /* Normal weight */
+}
+
+.exo-200{
+  font-family: "Exo", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.exo {
+  font-family: 'Exo', sans-serif; /* Exo font */
+  font-weight: 400; /* Regular weight (normal) */
+}
+
+.exo-bold {
+  font-family: 'Exo', sans-serif; /* Exo font */
+  font-weight: 600; /* Bold weight */
+}
+
+/* Custom styles for Swiper pagination dots */
+.mySwiper .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5); /* Default white color with transparency */
+  opacity: 1;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #ffffff; /* Solid white color for active dot */
+}
