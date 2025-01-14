@@ -12,7 +12,7 @@ export default function About() {
         <Header title="CONTACT US" />
       </div>
       <Form />
-      <Info />
+      {/* <Info /> */}
     </main>
   );
 }

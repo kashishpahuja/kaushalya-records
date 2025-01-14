@@ -49,6 +49,10 @@ const Footer = () => {
                 </p>
               {/* Contact Details */}
               <div className="text-center lg:text-left mb-6">
+               
+                <p className="mb-4 text-sm lg:text-md">
+                  70 Hermann Ave Carteret New Jersey 07008
+                </p>
                 <p className="mb-4">
                   <Link
                     href="tel:+91 94623-27667"
@@ -56,9 +60,6 @@ const Footer = () => {
                   >
                     +91 94623-27667
                   </Link>
-                </p>
-                <p className="mb-4 text-sm lg:text-md">
-                  70 Hermann Ave Carteret New Jersey 07008
                 </p>
                 <p>
                   <Link
