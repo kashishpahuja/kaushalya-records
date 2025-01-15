@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function info() {
   return (
-    <div className="flex flex-col lg:flex-row items-stretch mx-4 md:mx-12 xl:mx-24 py-8 lg:py-24">
+    <div className="flex flex-col lg:flex-row items-stretch mx-4 md:mx-12 xl:mx-0 py-8 lg:py-0">
         {/* Map Section */}
         <div className="w-full h-[240px] md:h-[430px] ">
           <iframe

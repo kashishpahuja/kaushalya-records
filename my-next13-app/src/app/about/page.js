@@ -2,7 +2,7 @@
 import React from "react";
 
 import Header from "../components/about/Banner";
-import Why from "../components/About";
+import Why from "../components/about/Cards";
 import Intro from "../components/about/Intro";
 
 export default function About() {

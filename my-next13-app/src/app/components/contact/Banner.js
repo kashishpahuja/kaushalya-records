@@ -4,15 +4,16 @@ import React from "react";
 function Header({ title, content, url }) {
   return (
     <div
-      className="h-[240px] lg:h-[450px] w-full "
+      className="h-[240px] lg:h-[410px] w-full "
       style={{
-        backgroundImage: "url(/Images/contactBanner.webp)",
+        backgroundImage: "url(/Images/aboutBanner.webp)",
         backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundSize: "cover", // This ensures the entire image is visible
+        backgroundRepeat: "no-repeat", // Prevents the image from repeating
       }}
     >
-      <div className="flex flex-col gap-6 items-end  justify-end py-20 lg:py-40 mr-8 md:mr-24 lg:mr-32 xl:mr-60">
-        <h3 className="exo-bold text-3xl md:text-5xl lg:text-6xl text-[#f7931e] ">
+      <div className="flex flex-col gap-6 items-end  justify-start py-20  mr-8 md:mr-24 lg:mr-32 xl:mr-60">
+        <h3 className="exo-bold text-2xl md:text-5xl text-[#f7931e] ">
           {title}
         </h3>
         <a

@@ -36,14 +36,14 @@ function Navbar() {
     className={`${
       isScrolled
         ? "bg-opacity-70  bg-black text-white"
-        : " bg-black"
-    } h-[110px] text-white shadow-md sticky top-0 z-[99999] transition-all ease-in-out duration-300`}
+        : ""
+    } h-[100px] text-white shadow-md sticky top-0 z-[99999] transition-all ease-in-out duration-300`}
   >
       <div className="flex items-center justify-between px-6 lg:px-20 h-full mx-4 lg:mx-16">
         {/* Logo */}
-        <div className=" h-20 xl:h-24 ">
+        <div className="h-44 ">
           <Link href={'/'}>
-          <img src="/Images/logo.webp" alt="" className="w-full h-[100%] object-contain" />
+          <img src="/Images/logo2.webp" alt="" className="w-full h-[100%] object-contain" />
           </Link>
         </div>
 

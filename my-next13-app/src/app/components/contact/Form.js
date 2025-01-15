@@ -1,5 +1,11 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
+import { FaLocationPinLock, FaTimeline } from "react-icons/fa6";
+import { MdOutlineWifiCalling3 ,MdMailOutline} from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
+import { MdAccessTime } from "react-icons/md";
+import { SlCalender } from "react-icons/sl";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // import styles for toasts
 
@@ -95,25 +101,93 @@ function Form({ onClose }) {
   };
 
   return (
-    <div className="my-8 lg:my-20 mx-8 lg:px-20 text-black ">
+    <div className="my-8 lg:my-20 mx-8 lg:mx-16 xl:mx-40 text-white ">
       <ToastContainer style={{ zIndex: 999999999 }}  />
-      <div className="flex items-center justify-center mx-auto flex-wrap-reverse lg:flex-nowrap gap-8">
-        <div className="w-full lg:w-1/2">
-          <img
+      <div className="flex items-start justify-center flex-wrap-reverse lg:flex-nowrap gap-8">
+        <div className="w-full lg:w-1/2 text-white  ">
+          {/* <img
             src="/Images/contact1.webp"
             alt=""
             className="w-full h-[100%] object-cover"
-          />
+          /> */}
+          <div>
+          <h3 className=" text-3xl font-semibold ">Feel Free to Write</h3>
+          <h3 className="text-md lg:text-lg font-semibold mt-4">Working Hours</h3>
+          <div className="flex items-center justify-between my-2">
+            <div className="flex items-center gap-2">
+            <div>
+                <SlCalender className="w-4 h-4 text-gray-600"/>
+              </div>
+              <div className="text-sm lg:text-md text-gray-600">
+                Monday - Saturday
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+            <div>
+                <MdAccessTime  className="w-4 h-4 text-gray-600"/>
+              </div>
+              <div className="text-sm lg:text-md text-gray-600">
+                10:00am - 06:00pm
+              </div>
+            </div>
+          </div>
+          </div>
+
+<div className=" pt-6 border-t border-gray-400 flex flex-col items-start justify-center gap-6 ">
+          <div className="flex items-center gap-4">
+              <div>
+                <MdOutlineWifiCalling3  className="w-8 h-8 text-red-500"/>
+              </div>
+              <div>
+                <h3 className="text-xl lg:text-xl font-semibold">Call Us</h3>
+                <p className="mt-2">
+                  <Link
+                    href="tel:+91 94623-27667"
+                    className="hover:underline text-sm lg:text-md"
+                  >
+                    +91 94623-27667
+                  </Link>
+                </p>
+              </div>
+          </div>
+          <div className="flex items-center gap-4 ">
+              <div>
+                <MdMailOutline className="w-8 h-8 text-red-500"/>
+              </div>
+              <div>
+                <h3 className="text-xl lg:text-xl font-semibold">Mail Us</h3>
+                <p  className="mt-2">
+                  <Link
+                    href="mailto:info@srscargopackers.in"
+                    className="hover:underline text-sm lg:text-md"
+                  >
+                    info@srscargopackers.in
+                  </Link>
+                </p>
+              </div>
+          </div> 
+           <div className="flex items-center gap-4 ">
+              <div>
+                <ImLocation2 className="w-8 h-8 text-red-500"/>
+              </div>
+              <div>
+                <h3 className="text-xl lg:text-xl font-semibold">Visit Us</h3>
+                <p className="mt-2 text-sm lg:text-md">
+                  70 Hermann Ave Carteret New Jersey 07008
+                </p>
+              </div>
+          </div>
+          </div>
         </div>
-        <div className="w-full lg:w-1/2 shadow-lg">
-          <div className="lg:px-12 py-4 font-semibold w-full max-w-3xl">
-            <h3 className="text-2xl lg:text-3xl font-semibold mb-3">
+        <div className="w-full lg:w-1/2  shadow-lg">
+          <div className="lg:px-12 py-4 lg:py-0 font-semibold w-full max-w-3xl">
+            {/* <h3 className="text-3xl font-semibold mb-3">
               Feel Free to Write
             </h3>
             <p className="text-white mb-4 text-sm">
               Your email address will not be published. Required fields are
               marked *
-            </p>
+            </p> */}
 
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
@@ -124,9 +198,9 @@ function Form({ onClose }) {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 rounded-md p-4 focus:outline-none"
+                    className="w-full border-b border-gray-600  p-4 focus:outline-none"
                   />
-                  {errors.name && <p className="text-red-600">{errors.name}</p>}
+                  {errors.name && <p className="text-red-500">{errors.name}</p>}
                 </div>
 
                 <div>
@@ -136,10 +210,10 @@ function Form({ onClose }) {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 rounded-md p-4 focus:outline-none"
+                    className="w-full border-b border-gray-600  p-4 focus:outline-none"
                   />
                   {errors.phone && (
-                    <p className="text-red-600">{errors.phone}</p>
+                    <p className="text-red-500">{errors.phone}</p>
                   )}
                 </div>
 
@@ -150,10 +224,10 @@ function Form({ onClose }) {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 rounded-md p-4 focus:outline-none"
+                    className="w-full border-b border-gray-600  p-4 focus:outline-none"
                   />
                   {errors.email && (
-                    <p className="text-red-600">{errors.email}</p>
+                    <p className="text-red-500">{errors.email}</p>
                   )}
                 </div>
 
@@ -164,10 +238,10 @@ function Form({ onClose }) {
                     name="location_form"
                     value={formData.location_form}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 rounded-md p-4 focus:outline-none"
+                    className="w-full border-b border-gray-600  p-4 focus:outline-none"
                   />
                   {errors.location_form && (
-                    <p className="text-red-600">{errors.location_form}</p>
+                    <p className="text-red-500">{errors.location_form}</p>
                   )}
                 </div>
               </div>
@@ -178,10 +252,10 @@ function Form({ onClose }) {
                   placeholder="Write Message*"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full border border-gray-200 rounded-md p-4 h-32 focus:outline-none"
+                  className="w-full border-b border-gray-600  p-4 h-32 focus:outline-none"
                 ></textarea>
                 {errors.message && (
-                  <p className="text-red-600">{errors.message}</p>
+                  <p className="text-red-500">{errors.message}</p>
                 )}
               </div>
 
