@@ -20,13 +20,15 @@ function Music() {
      
        
         <h1 className="text-[26px] lg:text-[38px] font-bold">BOOKING & CONTACT</h1>
-        <Link 
+        <a 
   href="https://wa.me/1234567890" 
+        target="_blank" 
+      rel="noopener noreferrer"
   className="border bg-white text-black py-2 px-4 text-lg " 
   style={{ fontFamily: 'Arial' }}
 >
   LET'S CONNECT
-</Link>
+</a>
 
         </div>
     </div>
