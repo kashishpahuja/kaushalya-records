@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #000; /* Black background */
+  background-color: black; /* Black background */
   font-family: 'Exo', 'Helvetica', 'sans-serif'; /* Default font */
   font-weight: 400; /* Normal weight */
 }
@@ -35,4 +35,10 @@ body {
 
 .mySwiper .swiper-pagination-bullet-active {
   background-color: #ffffff; /* Solid white color for active dot */
+}
+
+
+.relative video {
+  opacity: .4;
+  transition: opacity 0.3s ease-in-out;
 }

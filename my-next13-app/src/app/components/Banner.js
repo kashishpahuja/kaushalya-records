@@ -3,6 +3,7 @@ import React from 'react';
 
 function Banner() {
   return (
+    
     <div className="font-exo relative w-full h-[600px] lg:h-[800px] overflow-hidden" 
     style={{
       backgroundImage: `url('/Images/photo2.webp')`,
@@ -24,14 +25,20 @@ function Banner() {
         <p className="exo-400 text-xl lg:text-3xl font-medium mb-8 lg:mb-12 text-[#f7931e]" style={{letterSpacing:'1px'}}>Kaushalya Records
 
         </p>
-        <a 
-      href="https://wa.me/919462327667" 
+        {/* <a 
+      href="
+      /919462327667" 
       className="p-2 lg:px-6 lg:py-4 border-white border" 
       target="_blank" 
       rel="noopener noreferrer"
     >
       Get In Touch
-    </a>
+    </a> */}
+     <Link
+      href={'/contact'} 
+      className="p-2 lg:px-6 lg:py-4 border-white border" >
+      Get In Touch
+    </Link>
       </div>
        
 

@@ -18,9 +18,9 @@ export default function About() {
         <div className=''>
         <Header title="OUR ALBUMS" url="/Images/albumsBanner.jpg"/>
         </div>
-        <Music/>
+ 
 <Albums/>
-      
+<Music/>
 
 
     </main>
